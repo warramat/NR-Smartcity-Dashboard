@@ -1,0 +1,1496 @@
+<html lang="en">
+
+<head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <meta name="csrf-token" content="5EUGvqfmjuLb0XKP7VHUcxo2jFEI6kIZMGCXY4pO">
+
+    <title>เทศบาลเมืองปากพูน</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="../../CSS/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/app_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        .h250 {
+            height: 250px;
+        }
+    </style>
+</head>
+
+
+<body id="kt_body"
+    class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed"
+    style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+    <div class="d-flex flex-column flex-root">
+        <div class="page d-flex flex-row flex-column-fluid">
+            <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+                <div id="kt_header" class="header align-items-stretch">
+                    <div class="container d-flex align-items-stretch justify-content-between">
+                        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
+                            <a href="#">
+                                <img alt="Logo" src="../../img/logo.jpg" class="h-60px" />
+                                <span class="logoname">เทศบาลเมืองปากพูน</span>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch" id="kt_header_nav">
+                                <div class="header-menu align-items-stretch" data-kt-drawer="true"
+                                    data-kt-drawer-name="header-menu"
+                                    data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                                    data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+                                    data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle"
+                                    data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                                    data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+
+                                    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch"
+                                        id="#kt_header_menu" data-kt-menu="true">
+                                        <div class="menu-item me-lg-1">
+                                            <a class="menu-link py-3 active" href="../../index.html">
+                                                <span class="menu-title">หน้าหลัก</span>
+                                            </a>
+                                        </div>
+                                        <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                            class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <span class="menu-link py-3">
+                                                <span class="menu-title">ร้องเรียน</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <div
+                                                class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="../../appeal/appeal/appeal.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">ใบงานร้องเรียน</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="../../appeal/apply/apply.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">จัดการหัวข้อเรื่อง</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                            class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <span class="menu-link py-3 ">
+                                                <span class="menu-title">ดูแลสุขภาพ</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <div
+                                                class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 "
+                                                        href="../../healthcare/healthData/healthData.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">ข้อมูลสุขภาพ</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 "
+                                                        href="../../healthcare/healthScreen/healthScreen.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">คัดกรองสุขภาพ</span>
+                                                    </a>
+                                                </div>
+                                                <!-- <div class="menu-item">
+                                                    <a class="menu-link py-3 "
+                                                        href="../../healthcare/officer/officer.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">เจ้าหน้าที่ อสม.</span>
+                                                    </a>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="menu-item me-lg-1">
+                                            <a class="menu-link py-3 " href="../../petition/petition.html">
+                                                <span class="menu-title">ยื่นคำร้อง</span>
+                                            </a>
+                                        </div>
+
+
+                                        <!-- <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                            class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <span class="menu-link py-3 ">
+                                                <span class="menu-title">โควิด 19</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <div
+                                                class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="./covid-19/ATK/atk.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">ผู้มีผลตรวจ ATK เป็นบวก</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item me-lg-1">
+                                            <a class="menu-link py-3 " href="./flood/flood.html">
+                                                <span class="menu-title">น้ำท่วม</span>
+                                            </a>
+                                        </div> -->
+                                        <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                            class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <span class="menu-link py-3 ">
+                                                <span class="menu-title">ผู้ใช้งาน</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <div
+                                                class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="../../user/userList/userList.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">รายชื่อผู้ใช้งาน</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="../../user/userLevel/userLevel.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">ระดับผู้ใช้งาน</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                            class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <span class="menu-link py-3 ">
+                                                <span class="menu-title">รายงาน</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <div
+                                                class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 "
+                                                        href="./reportSummary.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">รายงานสรุป</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="menu-link py-3 " href="./reportA/reportA.html">
+                                                        <span class="menu-bullet">
+                                                            <span class="bullet bullet-dot"></span>
+                                                        </span>
+                                                        <span class="menu-title">ร้องเรียน</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-stretch flex-shrink-0">
+                                <div class="d-flex align-items-stretch flex-shrink-0">
+                                    <div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
+                                        <div class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                            data-kt-menu-trigger="click" data-kt-menu-attach="parent"
+                                            data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
+                                            <div class="symbol symbol-50px me-5">
+                                                <img alt="Logo"
+                                                    src="../../img/blank.png" />
+                                            </div>
+                                        </div>
+
+                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px"
+                                            data-kt-menu="true">
+                                            <div class="menu-item px-3">
+                                                <div class="menu-content d-flex align-items-center px-3">
+                                                    <div class="d-flex flex-column">
+                                                        <div class="fw-bolder d-flex align-items-center fs-5" id="name">
+                                                        </div>
+                                                        <a href="#" class="fw-bold text-muted text-hover-primary fs-7"
+                                                            id="userid"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">เปลี่ยนรหัสผ่าน</a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <li><a class="menu-link px-5" onclick="logout()">ออกจากระบบ</a></li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                    <style>
+                        .img_smart {
+                            position: absolute;
+                            right: 20px;
+                            top: 19px;
+                            width: 80px;
+                        }
+                    </style>
+                    <div class="toolbar" id="kt_toolbar">
+                        <div id="kt_toolbar_container" class="container d-flex flex-stack">
+                            <div data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                                data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}"
+                                class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+                                <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">รายงาน</h1>
+                                <span class="h-20px border-gray-200 border-start mx-4"></span>
+                                <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
+                                    <li class="breadcrumb-item text-muted">
+                                        <a href="../../img/home-bg-slideshow1.jpg"
+                                            class="text-muted text-hover-primary">หน้าหลัก</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <span class="bullet bg-gray-200 w-5px h-2px"></span>
+                                    </li>
+                                    <li class="breadcrumb-item text-dark">รายงาน</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-items-center py-1">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post d-flex flex-column-fluid" id="kt_post">
+                        <div id="kt_content_container" class="container">
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-12">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">รายชื่อลงทะเบียน</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8" id="province">
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="allUser"></span>3408 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">
+                                                จำนวนผู้ลงทะเบียนทั้งหมด</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color: cadetblue">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-white svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-dark fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="total"></span>2968 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-dark" style="font-size: 15px;">
+                                                เป็นคนในจังหวัดนครศรีธรรมราช</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xl-3">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-5 mb-xl-8"
+                                        style="background-color: #5f9ea0b5">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-white svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-info fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="district"></span>3408 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-info" style="font-size: 15px;">
+                                                เพิ่มเป็นเพื่อนใน Line Pakpoon Smartcity</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-info hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-white svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-warning fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="sub_district"></span>163 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-warning" style="font-size: 15px;">
+                                                ผู้ติดตาม</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <div class="row g-5 g-xl-8">
+                                <div class="col-4">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">เพศ</span>
+                                            </h3>
+
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="prbzwucjexlokidfvshgtamqy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span
+                                                    class="card-label fw-bolder fs-3 mb-1">อำเภอในจังหวัดนครศรีธรรมราช</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="aejdtmqyilohfubngkcpxvswr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> -->
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-12">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">ร้องเรียน</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-xl-3">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-body p-0">
+                                            <div class="px-9 pt-7 card-rounded h-275px w-100 bg-primary">
+                                                <div class="d-flex flex-stack">
+                                                    <h3 class="m-0 text-white fw-bolder fs-3">ใบงาน ทั้งหมด</h3>
+                                                </div>
+                                                <div class="d-flex text-center flex-column text-white pt-8">
+                                                    <span class="fw-bold fs-7">จำนวน</span>
+                                                    <span class="fw-bolder fs-2x pt-1">643</span>
+                                                    <span class="fw-bold fs-7">ใบงาน</span>
+                                                </div>
+                                            </div>
+                                            <div class="shadow-xs card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1 bg-white overflow-auto"
+                                                style="margin-top: -100px;height: 381px;">
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">บริการหมอนัด</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">361</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/light.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ไฟฟ้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">59</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/road.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ถนน-ทางเท้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">40</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/prapa.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ประปา</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">64</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/cuttree.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ตัดต้นไม้/กิ่งไม้</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">14</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/kurabainam.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">คูระบายน้ำ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">เหตุสร้างความรำคาญ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">14</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/other.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">อื่นๆ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">91</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-3">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-body p-0">
+                                            <div class="px-9 pt-7 card-rounded h-275px w-100 bg-warning">
+                                                <div class="d-flex flex-stack">
+                                                    <h3 class="m-0 text-white fw-bolder fs-3">ใบงาน กำลังรอดำเนินการ</h3>
+                                                </div>
+                                                <div class="d-flex text-center flex-column text-white pt-8">
+                                                    <span class="fw-bold fs-7">จำนวน</span>
+                                                    <span class="fw-bolder fs-2x pt-1" id="">20</span>
+                                                    <span class="fw-bold fs-7">ใบงาน</span>
+                                                </div>
+                                            </div>
+                                            <div class="shadow-xs card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1 bg-white overflow-auto"
+                                                style="margin-top: -100px;height: 381px;">
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/cuttree.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ตัดต้นไม้/กิ่งไม้</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/other.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">อื่นๆ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">15</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">บริการหมอนัด</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">1</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/light.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ไฟฟ้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/road.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ถนน-ทางเท้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/prapa.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ประปา</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/kurabainam.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">คูระบายน้ำ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">เหตุสร้างความรำคาญ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-body p-0">
+                                            <div class="px-9 pt-7 card-rounded h-275px w-100 bg-success">
+                                                <div class="d-flex flex-stack">
+                                                    <h3 class="m-0 text-white fw-bolder fs-3">ใบงาน รอตรวจสอบ</h3>
+                                                </div>
+                                                <div class="d-flex text-center flex-column text-white pt-8">
+                                                    <span class="fw-bold fs-7">จำนวน</span>
+                                                    <span class="fw-bolder fs-2x pt-1">10</span>
+                                                    <span class="fw-bold fs-7">ใบงาน</span>
+                                                </div>
+                                            </div>
+                                            <div class="shadow-xs card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1 bg-white overflow-auto"
+                                                style="margin-top: -100px;height: 381px;">
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/light.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ไฟฟ้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                            src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">บริการหมอนัด</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">5</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/other.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">อื่นๆ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">3</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/road.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ถนน-ทางเท้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/prapa.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ประปา</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/cuttree.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ตัดต้นไม้/กิ่งไม้</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/kurabainam.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">คูระบายน้ำ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">เหตุสร้างความรำคาญ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-body p-0">
+                                            <div class="px-9 pt-7 card-rounded h-275px w-100 bg-danger">
+                                                <div class="d-flex flex-stack">
+                                                    <h3 class="m-0 text-white fw-bolder fs-3">ใบงาน เสร็จสิ้นแล้ว</h3>
+                                                </div>
+                                                <div class="d-flex text-center flex-column text-white pt-8">
+                                                    <span class="fw-bold fs-7">จำนวน</span>
+                                                    <span class="fw-bolder fs-2x pt-1">613</span>
+                                                    <span class="fw-bold fs-7">ใบงาน</span>
+                                                </div>
+                                            </div>
+                                            <div class="shadow-xs card-rounded mx-9 mb-9 px-6 py-9 position-relative z-index-1 bg-white overflow-auto"
+                                                style="margin-top: -100px;height: 381px;">
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                            src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">บริการหมอนัด</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">355</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/light.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ไฟฟ้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">57</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/road.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ถนน-ทางเท้า</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">40</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/prapa.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ประปา</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">64</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/cuttree.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a
+                                                                class="fs-5 text-gray-800 text-hover-primary fw-bolder">ตัดต้นไม้/กิ่งไม้</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">10</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/kurabainam.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">คูระบายน้ำ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">0</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/callcenter.jpg"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">เหตุสร้างความรำคาญ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">14</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                                <div class="d-flex align-items-center mb-6">
+                                                    <div class="symbol symbol-45px w-40px me-5">
+                                                        <span class="symbol-label bg-lighten">
+                                                            <img alt="Logo"
+                                                                src="../../img/other.png"
+                                                                class="h-40px" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap w-100">
+                                                        <div class="mb-1 pe-3 flex-grow-1">
+                                                            <a class="fs-5 text-gray-800 text-hover-primary fw-bolder">อื่นๆ</a>
+
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="fw-bolder fs-5 text-gray-800 pe-1">73</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-12">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">บริการอื่นๆ</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8" id="province">
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="allUser"></span>361 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">
+                                                จำนวนผู้ขอรับบริการ หมอนัด</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color: cadetblue">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-white svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-dark fw-bolder fs-2 mb-2 mt-5">
+                                                <p><span id="total"></span>0 คน</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-dark" style="font-size: 15px;">
+                                                จำนวนผู้ขอรับบริการ หมอสารพัดช่าง</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!-- ************************************** กอง************************************************** -->
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-12">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <div class="card-header border-0 pt-5">
+                                            <img alt="Logo" src="../../img/logo.jpg" style="width: 100px;height: 100px;" />
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">สำนักงานเทศบาลเมืองปากพูน</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8" id="province">
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p> กองประปา</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังรอดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">เสร็จสิ้น ทั้งหมด     งาน</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p> กองช่าง</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังรอดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">เสร็จสิ้น ทั้งหมด     งาน</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p> กองสวัสดิการ</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังรอดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">เสร็จสิ้น ทั้งหมด     งาน</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p> กองการศึกษา</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังรอดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">เสร็จสิ้น ทั้งหมด     งาน</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="row g-5 g-xl-8" id="province">
+                                <div class="col-xl-3">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8">
+                                        <div class="card-body">
+                                            <span class="svg-icon svg-icon-primary svg-icon-3x ms-n1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                                    viewBox="0 0 24 24" version="1.1">
+                                                    <path
+                                                        d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path
+                                                        d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">
+                                                <p>กองสาธารณสุข</p>
+                                            </div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังรอดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">กำลังดำเนินการ ทั้งหมด     งาน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">เสร็จสิ้น ทั้งหมด     งาน</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+
+                            <!--***************************************************************************************-->
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-12">
+                                    <div class="card card-xl-stretch mb-xl-8">
+                                        <!--begin::Header-->
+                                        <div class="card-header border-0 pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bolder fs-3 mb-1">ดูแลสุขภาพ</span>
+                                            </h3>
+                                            <div class="card-toolbar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-xl-2">
+                                    <a href="#" class="card bg-white hoverable card-xl-stretch mb-xl-8"
+                                        style="position: relative;">
+                                        <img src="../../img/health1.jpg"
+                                            class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+                                            <div class="text-inverse-white fw-bolder fs-2 mb-2 mt-5">60 คน</div>
+                                            <div class="fw-bold text-inverse-white" style="font-size: 15px;">
+                                                จำนวนผู้ลงทะเบียน</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color: cadetblue;position: relative;">
+                                        <img src="../../img/health2.jpg"
+                                            style="width: 60px;" class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+                                            <div class="text-inverse-dark fw-bolder fs-2 mb-2 mt-5">5 คน</div>
+                                            <div class="fw-bold text-inverse-dark" style="font-size: 15px;">
+                                                เป็นผู้สูงอายุ</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xl-2">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-5 mb-xl-8"
+                                        style="background-color: #5f9ea0b5;position: relative;">
+                                        <img src="../../img/health3.jpg"
+                                            class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+                                            <div class="text-inverse-info fw-bolder fs-2 mb-2 mt-5">0 คน</div>
+                                            <div class="fw-bold text-inverse-info" style="font-size: 15px;">
+                                                เป็นผู้ป่วยติดเตียง</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2">
+                                    <a href="#" class="card hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color:#6e4abb;position: relative;">
+                                        <img src="../../img/health4.jpg"
+                                            class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+                                            <div class="text-inverse-warning fw-bolder fs-2 mb-2 mt-5">1 คน</div>
+                                            <div class="fw-bold text-inverse-warning" style="font-size: 15px;">
+                                                เป็นผู้พิการ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2">
+                                    <a href="#" class="card  hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color: #a195bb;position: relative;">
+                                        <img src="../../img/health5.jpg"
+                                            class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+
+                                            <div class="text-inverse-warning fw-bolder fs-2 mb-2 mt-5">11 คน</div>
+                                            <div class="fw-bold text-inverse-warning" style="font-size: 15px;">
+                                                มีโรคประจำตัว</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2">
+                                    <a href="#" class="card hoverable card-xl-stretch mb-xl-8"
+                                        style="background-color: #3a9dd6;position: relative;">
+                                        <img src="../../img/health6.jpg"
+                                            class="img_smart">
+                                        <div class="card-body" style="margin-top: 39px;">
+                                            <div class="text-inverse-warning fw-bolder fs-2 mb-2 mt-5">
+
+                                            </div>
+                                            <div class="fw-bold text-inverse-warning" style="font-size: 15px;">
+                                                ไม่มีโรคประจำตัว</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- <script type="text/javascript" src="./reportSummary.js"></script> -->
+    <script src="../../report/reportSummary/reportSummary.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="../../JS/jquery-3.5.1.min.js"></script>
+    <script src="../../JS/plugins.bundle.js"></script>
+    <script src="../../JS/scripts.bundle.js"></script>
+    <script src="../../JS/widgets.js"></script>
+    <script src="../../JS/chat.js"></script>
+    <script src="../../JS/create-app.js"></script>
+    <script src="../../JS/upgrade-plan.js"></script>
+    <script src="../../JS/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- <script src="./reportSummary.js"></script> -->
+
+</body>
+
+</html>
+
+
+

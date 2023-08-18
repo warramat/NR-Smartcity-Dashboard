@@ -1,0 +1,28 @@
+.swal2-popup .swal2-icon {
+  margin: 2rem 0 0 3rem;
+}
+
+.h250 {
+  height: 250px;
+}
+
+ul.images {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+ul.images li {
+  display: inline;
+  width: 150px;
+}
+
+.img-row-preview {
+  width: 150px;
+}
+
+li {
+  margin-right: 2rem;
+}
