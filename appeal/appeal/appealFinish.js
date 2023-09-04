@@ -87,7 +87,7 @@ function sendmsg(body, id) {
     redirect: 'follow'
   };
   fetch(
-    'https://smartcity.onrender.com/appeal/addRes/' + id,
+    'https://nr-smartcity.onrender.com/appeal/addRes/' + id,
     requestOptions
   )
     .then((response) => response.text())

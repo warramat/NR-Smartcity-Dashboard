@@ -19,14 +19,14 @@ $('form').submit(async (e) => {
     redirect: 'follow'
   };
   const res = await fetch(
-    'https://smartcity.onrender.com/User-admin/login',
+    'https://nr-smartcity.onrender.com/User-admin/login',
     requestOptions
   );
   if (res.status === 201) {
     const data = await res.json();
     localStorage.setItem('jwt', data.access_token);
     Swal.fire({
-      text: 'เข้าสู่ระบบเรียบร้อย',
+      text: 'เข้าสู่ระบบสำเร็จ',
       icon: 'success',
       confirmButtonText: 'OK',
       timer: 3000
