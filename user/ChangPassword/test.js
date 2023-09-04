@@ -11,7 +11,7 @@ function loadTable() {
           trHTML += '<tr>'; 
           trHTML += '<td>'+object['name']+'</td>';
           trHTML += '<td>'+object['userid']+'</td>';
-          trHTML += '<td>'+object['userid']+'</td>';
+          trHTML += '<td>'+object['level']+'</td>';
         //   trHTML += '<td>'+object['password']+'</td>';
           trHTML += '<td><button type="button" class="btn btn-outline-secondary" onclick="showUserEditBox('+object['_id']+')">Edit</button>';
           trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete('+object['_id']+')">Del</button></td>';
@@ -34,7 +34,9 @@ function loadTable() {
         '<input id="id" type="hidden">' +
         '<input id="name" class="swal2-input" placeholder="ชื่อจริง-นามสกุล">' +
         '<input id="userid" class="swal2-input" placeholder="ชื่อผู้ใช้งาน">' +
-        '<input id="password" class="swal2-input" placeholder="รหัสผ่าน">',
+        '<input id="password" class="swal2-input" placeholder="รหัสผ่าน">' +
+        '<input id="level" class="swal2-input" placeholder="ระดับผู้ใช้งาน">' 
+        ,
       focusConfirm: false,
       preConfirm: () => {
         userCreate();
@@ -46,12 +48,13 @@ function loadTable() {
     const name = document.getElementById("name").value;
     const userid = document.getElementById("userid").value;
     const password = document.getElementById("password").value;
+    const level = document.getElementById("level").value;
       
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "https://nr-smartcity.onrender.com/User-admin/Cre-Admin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
-      "name": name, "userid": userid, "password": password, 
+      "name": name, "userid": userid, "password": password, "level" : level
     }));
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -117,7 +120,7 @@ function showUserEditBox(id) {
 /***************************************** DELETE *********************************************** */
 function userDelete(id) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", "https://www.melivecode.com/api/users/delete");
+    xhttp.open("DELETE", "https://nr-smartcity.onrender.com/User-admin/deluser" + id);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "id": id
