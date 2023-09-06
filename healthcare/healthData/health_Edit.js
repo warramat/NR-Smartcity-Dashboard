@@ -35,7 +35,7 @@ window.onload = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const _id = urlParams.get('_id');
   let url =
-    'https://nr-smartcity.onrender.com/appeal/userData/?id=' + _id;
+    'https://nr-api-smartcity-final.onrender.com/appeal/userData/?id=' + _id;
   if ((await (await fetch(url)).status) !== 200) {
     document.write('not found.');
     return;
@@ -46,7 +46,7 @@ window.onload = async () => {
 };
 
 function setPage(data) {
-  const img_url = 'https://nr-smartcity.onrender.com/userSmart/';
+  const img_url = 'https://nr-api-smartcity-final.onrender.com/userSmart/';
   document.getElementById('pictureUrl').src = data.pictureUrl;
   let H = Object.keys(data);
   H.forEach((e) => {
@@ -119,7 +119,7 @@ function commit() {
   const urlParams = new URLSearchParams(window.location.search);
   const _id = urlParams.get('_id');
   const url =
-    'https://nr-smartcity.onrender.com/appeal/editappeal/' + _id;
+    'https://nr-api-smartcity-final.onrender.com/appeal/editappeal/' + _id;
   Swal.fire({
     icon: 'question',
     title: 'ยืนยันการรับงาน ?',

@@ -4,7 +4,7 @@ window.onload = async (e) => {
   await loadTable('เสร็จสิ้น');
 };
 async function loadTable(con) {
-  let baseURL = 'https://nr-smartcity.onrender.com/appeal/app/';
+  let baseURL = 'https://nr-api-smartcity-final.onrender.com/appeal/app/';
   let trHTML = '';
   let status = [];
   let color = [];

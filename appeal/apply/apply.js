@@ -35,7 +35,7 @@ function loadTable() {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'GET',
-    'https://nr-smartcity.onrender.com/apply/applyAll/'
+    'https://nr-api-smartcity-final.onrender.com/apply/applyAll/'
   );
   xhttp.send();
   xhttp.onreadystatechange = function () {
@@ -89,7 +89,7 @@ function userCreate() {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'POST',
-    'https://nr-smartcity.onrender.com/apply/ply'
+    'https://nr-api-smartcity-final.onrender.com/apply/ply'
   );
   xhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
   xhttp.send(
@@ -113,7 +113,7 @@ function showUserEditBox(_id) {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'GET',
-    'https://nr-smartcity.onrender.com/apply/applyAll/'
+    'https://nr-api-smartcity-final.onrender.com/apply/applyAll/'
   );
   xhttp.send();
   xhttp.onreadystatechange = function () {
@@ -166,7 +166,7 @@ function userEdit() {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'PUT',
-    'https://nr-smartcity.onrender.com/apply/editapply/' + _id
+    'https://nr-api-smartcity-final.onrender.com/apply/editapply/' + _id
   );
   xhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
   xhttp.send(
@@ -200,7 +200,7 @@ function userDelete(_id) {
       const xhttp = new XMLHttpRequest();
       xhttp.open(
         'DELETE',
-        'https://nr-smartcity.onrender.com/apply/deleteapply/' + _id
+        'https://nr-api-smartcity-final.onrender.com/apply/deleteapply/' + _id
       );
       xhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
       xhttp.send();
