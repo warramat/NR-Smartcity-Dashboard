@@ -95,12 +95,12 @@ $(document).ready(async function () {
       { data: 'elderly' },
       { data: 'bedridden_patient' },
       { data: 'handicapped' },
-      {
-        data: '_id',
-        render: function (data, type, row) {
-          return `<a class="btn btn btn-primary" href="../healthData/health_Edit.html?_id=${data}">จัดการ</a>`;
-        }
-      }
+      // {
+      //   data: '_id',
+      //   render: function (data, type, row) {
+      //     return `<a class="btn btn btn-primary" href="../healthData/health_Edit.html?_id=${data}">จัดการ</a>`;
+      //   }
+      // }
     ],
     language: {
       zeroRecords: ' '

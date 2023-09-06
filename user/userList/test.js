@@ -1,4 +1,4 @@
-function loadTable() {
+ function loadTable() {
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://nr-api-smartcity-final.onrender.com/User-admin/adminAll");
     xhttp.send();
@@ -11,8 +11,7 @@ function loadTable() {
           trHTML += '<tr>'; 
           trHTML += '<td>'+object['name']+'</td>';
           trHTML += '<td>'+object['userid']+'</td>';
-          trHTML += '<td>'+object['level']+'</td>';
-        //   trHTML += '<td>'+object['password']+'</td>';
+          trHTML += '<td>'+object['password']+'</td>';
           trHTML += '<td><button type="button" class="btn btn-outline-secondary" onclick="showUserEditBox('+object['_id']+')">Edit</button>';
           trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete('+object['_id']+')">Del</button></td>';
           trHTML += "</tr>";
@@ -24,18 +23,17 @@ function loadTable() {
   
   loadTable();
 
-
   /************************************* CREATE*************************************************** */
 
+ 
   function showUserCreateBox() {
     Swal.fire({
-      title: 'เพิ่มผู้ใช้งาน',
+      title: 'Create user',
       html:
-        '<input id="id" type="hidden">' +
-        '<input id="name" class="swal2-input" placeholder="ชื่อจริง-นามสกุล">' +
-        '<input id="userid" class="swal2-input" placeholder="ชื่อผู้ใช้งาน">' +
-        '<input id="password" class="swal2-input" placeholder="รหัสผ่าน">' +
-        '<input id="level" class="swal2-input" placeholder="ระดับผู้ใช้งาน">' ,
+        '<input id="_id" type="hidden">' +
+        '<input id="name" class="swal2-input" placeholder="Name">' +
+        '<input id="userid" class="swal2-input" placeholder="Userid">' +
+        '<input id="password" class="swal2-input" placeholder="Password">',
       focusConfirm: false,
       preConfirm: () => {
         userCreate();
@@ -47,14 +45,12 @@ function loadTable() {
     const name = document.getElementById("name").value;
     const userid = document.getElementById("userid").value;
     const password = document.getElementById("password").value;
-    const level = document.getElementById("level").value;
       
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "https://nr-api-smartcity-final.onrender.com/User-admin/Cre-Admin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
-      "name": name, "userid": userid, "password": password, "level" : level
-      // "level" : level
+      "name": name, "userid": userid, "password": password,
     }));
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -118,12 +114,12 @@ function showUserEditBox(id) {
 
 
 /***************************************** DELETE *********************************************** */
-function userDelete(id) {
+function userDelete(_id) {
     const xhttp = new XMLHttpRequest();
     xhttp.open("DELETE", "https://nr-api-smartcity-final.onrender.com/User-admin/deluser" + id);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
-      "id": id
+      "_id": _id
     }));
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4) {
