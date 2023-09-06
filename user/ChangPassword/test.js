@@ -1,6 +1,6 @@
 function loadTable() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://nr-api-smartcity-final.onrender.com/User-admin/adminAll");
+    xhttp.open("GET", "https://smartcity.onrender.com/User-admin/adminAll");
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -51,7 +51,7 @@ function loadTable() {
     const level = document.getElementById("level").value;
       
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://nr-api-smartcity-final.onrender.com/User-admin/Cre-Admin");
+    xhttp.open("POST", "https://smartcity.onrender.com/User-admin/Cre-Admin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "name": name, "userid": userid, "password": password, "level" : level
@@ -120,7 +120,7 @@ function showUserEditBox(id) {
 /***************************************** DELETE *********************************************** */
 function userDelete(id) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", "https://nr-api-smartcity-final.onrender.com/User-admin/deluser" + id);
+    xhttp.open("DELETE", "https://smartcity.onrender.com/User-admin/deluser" + id);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "id": id

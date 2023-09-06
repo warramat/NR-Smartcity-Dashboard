@@ -2,7 +2,7 @@ function loadTable() {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'GET',
-    'https://nr-api-smartcity-final.onrender.com/petition/petitionAll'
+    'https://smartcity.onrender.com/petition/petitionAll'
   );
   xhttp.send();
   xhttp.onreadystatechange = function () {
