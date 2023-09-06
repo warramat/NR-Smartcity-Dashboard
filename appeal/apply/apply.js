@@ -89,7 +89,7 @@ function userCreate() {
   const xhttp = new XMLHttpRequest();
   xhttp.open(
     'POST',
-    'https://nr-smartcity.onrender.com/apply/addapply'
+    'https://nr-smartcity.onrender.com/apply/ply'
   );
   xhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
   xhttp.send(
