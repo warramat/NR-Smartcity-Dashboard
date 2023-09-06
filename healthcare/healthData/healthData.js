@@ -40,7 +40,7 @@ function sendmsg(body, id) {
     redirect: 'follow'
   };
   fetch(
-    'https://smartcity.onrender.com/health/AllHealth' + id,
+    'https://nr-api-smartcity-final.onrender.com/health/AllHealth' + id,
     requestOptions
   )
     .then((response) => response.text())
@@ -59,14 +59,14 @@ $('#search_form').submit(async function (e) {
   let url = '';
   const f = $('#title').val();
   if ($('#input-text').val() === '' && $('#input-select').is(':hidden')) {
-    url = 'https://smartcity.onrender.com/health/AllHealth';
+    url = 'https://nr-api-smartcity-final.onrender.com/health/AllHealth';
   } else {
     const k =
       $('#input-text').val() === ''
         ? $('#input-select').val()
         : $('#input-text').val();
     url =
-      'https://smartcity.onrender.com/health/AllHealth?field=' +
+      'https://nr-api-smartcity-final.onrender.com/health/AllHealth?field=' +
       f +
       '&keyword=' +
       k;
@@ -79,7 +79,7 @@ $('#search_form').submit(async function (e) {
 });
 
 $(document).ready(async function () {
-  const url = 'https://smartcity.onrender.com/health/AllHealth';
+  const url = 'https://nr-api-smartcity-final.onrender.com/health/AllHealth';
   const res = await fetch(url);
   const datas = await res.json();
   $('#myTable').DataTable({
