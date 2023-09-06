@@ -20,12 +20,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./test.css">
     <style>
         .h250 {
             height: 250px;
         }
     </style>
-     <link href="./test.css" rel="stylesheet">
 </head>
 
 <body id="kt_body"
@@ -266,34 +266,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mt-5" >
-                        <div class="card-body">
-                          <div class="d-flex bd-highlight mb-3">
-                            <div class="me-auto p-2 bd-highlight"><h2>แก้ไขผู้ใช้งาน</div>
-                            <div class="p-2 bd-highlight">
-                              <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">เพิ่มผู้ใช้งาน</button>
+                    <div class="post d-flex flex-column-fluid" id="kt_post">
+                        <div id="kt_content_container" class="container">
+                            <div class="card">
+                                <div class="card-body pt-0">
+                                    <div class="card mt-5" >
+                                        <div class="card-body">
+                                          <div class="d-flex bd-highlight mb-3">
+                                            <div class="me-auto p-2 bd-highlight"><h2>แก้ไขผู้ใช้งาน</div>
+                                            <div class="p-2 bd-highlight">
+                                              <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">เพิ่มผู้ใช้งาน</button>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">ชื่อ</th>
+                                                  <th scope="col">ชื่อผู้ใช้งาน</th>
+                                                  <th scope="col">ระดับผู้ใช้งาน</th>
+                                                  <!-- <th scope="col">Password</th> -->
+                                                </tr>
+                                              </thead>
+                                              <tbody id="mytable">
+                                                <tr>
+                                                  <th scope="row" colspan="5">Loading...</th>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
                             </div>
-                          </div>
-                          
-                          <div class="table-responsive">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col">ชื่อ</th>
-                                  <th scope="col">ชื่อผู้ใช้งาน</th>
-                                  <th scope="col">ระดับผู้ใช้งาน</th>
-                                  <!-- <th scope="col">Password</th> -->
-                                </tr>
-                              </thead>
-                              <tbody id="mytable">
-                                <tr>
-                                  <th scope="row" colspan="5">Loading...</th>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
