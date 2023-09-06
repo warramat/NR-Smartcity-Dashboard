@@ -34,9 +34,8 @@ function loadTable() {
         '<input id="id" type="hidden">' +
         '<input id="name" class="swal2-input" placeholder="ชื่อจริง-นามสกุล">' +
         '<input id="userid" class="swal2-input" placeholder="ชื่อผู้ใช้งาน">' +
-        '<input id="password" class="swal2-input" placeholder="รหัสผ่าน">' 
-        
-,
+        '<input id="password" class="swal2-input" placeholder="รหัสผ่าน">' +
+        '<input id="level" class="swal2-input" placeholder="ระดับผู้ใช้งาน">' ,
       focusConfirm: false,
       preConfirm: () => {
         userCreate();
@@ -48,13 +47,13 @@ function loadTable() {
     const name = document.getElementById("name").value;
     const userid = document.getElementById("userid").value;
     const password = document.getElementById("password").value;
-    // const level = document.getElementById("level").value;
+    const level = document.getElementById("level").value;
       
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "https://nr-api-smartcity-final.onrender.com/User-admin/Cre-Admin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
-      "name": name, "userid": userid, "password": password, 
+      "name": name, "userid": userid, "password": password, "level" : level
       // "level" : level
     }));
     xhttp.onreadystatechange = function() {
