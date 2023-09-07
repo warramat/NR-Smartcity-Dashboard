@@ -39,7 +39,7 @@
                     <div class="container d-flex align-items-stretch justify-content-between">
                         <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
                             <a href="../../index.html">
-                                <img alt="Logo" src="../../img/logo.jpg" class="h-60px" />
+                                <img alt="Logo" src="../../img/NR_logo.png" class="h-60px" />
                                 <span class="logoname">อบต.นาเรียง</span>
                             </a>
                         </div>
@@ -329,47 +329,47 @@
                                                     fill="#121319" />
                                             </svg>
                                         </span>
-                                        <h3 class="fw-bolder m-0 text-gray-800">คัดกรองสุขภาพ 7 วันล่าสุด</h3>
+                                        <h3 class="fw-bolder m-0 text-gray-800">คัดกรองสุขภาพ</h3>
                                     </div>
-                                    <div class="d-flex my-4">
+                                    <!-- <div class="d-flex my-4">
                                         <input type="hidden" name="action" value="wait" />
                                         <a href="smarthelth_healthscreening?all=all"
                                             class="btn btn-primary align-self-center">ดูทั้งหมด</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="card-body p-9">
                                     <form class="form-horizontal" role="form" action="" method="get">
                                         <div class="row" style="margin-top: 20px;">
                                             <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group">
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
 
-                                                            <label style="width: 100%;">วันที่ <input
-                                                                    class="form-control" type="text" id="datedata"
-                                                                    readonly required name="start"
-                                                                    data-provide="datepicker" placeholder="--/--/---"
-                                                                    data-date-language="th" value=""></label>
+                                                                    <label style="width: 100%;">วันที่
+                                                                        <input class="form-control" type="text"
+                                                                            name="start" id="start" readonly
+                                                                            placeholder="01-01-2500" value="">
 
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group">
+                                                                    </label>
 
-                                                            <label style="width: 100%;">ถึง <input class="form-control"
-                                                                    type="text" id="datedata1" readonly required
-                                                                    name="end" data-provide="datepicker"
-                                                                    placeholder="--/--/---" data-date-language="th"
-                                                                    value=""></label>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4" style="position: relative;">
-                                                        <div class="form-group">
-
-                                                            <button type="summit" class="btn btn-success form-control"
-                                                                style="width: 100%;position: absolute;bottom: 0;">
-                                                                ค้นหา</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label style="width: 100%;">ถึง <input
+                                                                            class="form-control" type="text" name="end"
+                                                                            id="end" required placeholder="01-01-2500"
+                                                                            readonly value=""></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4" style="margin-top: 20px;">
+                                                                <div class="form-group">
+                                                                    <button type="summit" class="btn btn-success"
+                                                                        style="width: 100%;"> ค้นหา</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -446,12 +446,20 @@
     <script src="../../JS/sweetalert2.min.js"></script>
 
 
-    <script>
-        $(function () {
 
+       <script>
+        $(document).ready(function () {
 
-
+            $(function () {
+                $("#start,#end").datepicker({
+                    autoclose: true,
+                    language: 'th-th',
+                    todayHighlight: true,
+                    format: 'mm/dd/yyyy'
+                }).datepicker();
+            });
         });
+
     </script>
 
 </body>

@@ -299,6 +299,18 @@ async function  dataAll(){
     document.getElementById('fireFinish').innerHTML = total
   }
    
+
+  async function lineOA2(){
+    let {total} = await (await fetch(" https://nr-api-smartcity-final.onrender.com/userSmart/data/pagination?province=&district&sub_district")).json()
+    document.getElementById('lineOA2').innerHTML = total
+  }
+
+  async function lineOA1(){
+    let {total} = await (await fetch(" https://nr-api-smartcity-final.onrender.com/userSmart/data/pagination?province=นครศรีธรรมราช&district&sub_district")).json()
+    document.getElementById('lineOA1').innerHTML = total
+  }
+  
+   
    window.onload = async () => {
     dataAll()
     electricAll()
@@ -316,7 +328,6 @@ async function  dataAll(){
     emergencyAll()
     appointmentAll()
     paresthesiaAll()
-   
     HydrotherapyAll()
     fireAll()
 
@@ -380,6 +391,13 @@ async function  dataAll(){
     paresthesiaFinish()
     HydrotherapyFinish()
     fireFinish()
+
+    lineOA1()
+    lineOA2()
+    lineOA3()
+    lineOA4()
+    lineOA5()
+    lineOA6()
   } 
   
   
