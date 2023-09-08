@@ -85,7 +85,7 @@ function loadUser() {
   );
   const obj = JSON.parse(jsonPayload);
   document.getElementById('userid').innerText = obj.userid;
-  document.getElementById('name').innerText = obj.name;
+  document.getElementById('adminname').innerText = obj.name;
 }
 
 function logout() {
