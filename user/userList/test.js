@@ -8,8 +8,8 @@ async function loadTable() {
         trHTML += '<tr>';
         trHTML += '<td>' + object['name'] + '</td>';
         trHTML += '<td>' + object['userid'] + '</td>';
-        trHTML += '<td><button type="button" class="btn btn-outline-secondary" onclick=\'showUserEditBox("' + object['_id'] + '")\'>Edit</button>';
-        trHTML += '<button type="button" class="btn btn-outline-danger" onclick=\'userDelete("' + object['_id'] + '")\'>Del</button></td>';
+        trHTML += '<td><button type="button" class="btn btn-outline-danger" onclick=\'userDelete("' + object['_id'] + '")\'>ลบ</button>';
+        // trHTML += '<button type="button" class="btn btn-outline-danger" onclick=\'userDelete("' + object['_id'] + '")\'>Del</button></td>';
         trHTML += "</tr>";
       }
       document.getElementById("mytable").innerHTML = trHTML;
@@ -24,7 +24,7 @@ loadTable();
 
 function showUserCreateBox() {
   Swal.fire({
-    title: 'Create user',
+    title: 'เพิ่มผู้ใช้งาน',
     html:
       '<input id="_id" type="hidden">' +
       '<input id="f-name" class="swal2-input" placeholder="Name">' +
