@@ -243,3 +243,8 @@ function logout() {
   localStorage.removeItem('jwt');
   window.location.href = '../../login.html';
 }
+
+
+$(document).ready(function () {
+  $("#myTable").DataTable();
+});
