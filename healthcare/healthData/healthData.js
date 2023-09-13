@@ -93,7 +93,7 @@ $(document).ready(async function () {
       { data: 'hospital' },
       { data: 'birthday' },
       { data: 'elderly' },
-      { data: 'bedridden_patient' },
+      // { data: 'bedridden_patient' },
       { data: 'handicapped' },
       // {
       //   data: '_id',
